@@ -1,0 +1,160 @@
+.ShoeCheckout .product-img-container {
+  width: 40rem;
+  max-width: none;
+  margin: auto ;
+}
+img {
+  width: 100%;
+}
+.ShoeCheckout .productname {
+  font-size: 1.1rem;
+}
+.ShoeCheckout .price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1.7rem;
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+.name {
+  margin-left: 5rem;
+}
+.center {
+  margin: auto;
+  max-width: 1800px;
+}
+.ShoeCheckout .productwrapper {
+  padding-top: 1.4rem;
+}
+.ShoeCheckout .product-wrapper,
+.ShoeCheckout.product-wrapper2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+}
+.ShoeCheckout .product-wrapper2 {
+  padding-bottom: 0rem;
+  margin-bottom: 0rem;
+  margin-top: 1rem;
+}
+
+.ShoeCheckout .proinfo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin: 0.8rem;
+}
+.ShoeCheckout .img1,
+.ShoeCheckout .img2 {
+  display: block;
+  width: 36rem;
+  margin-bottom: 1rem;
+}
+.ShoeCheckout .product-info {
+  width: 40%;
+  display: block;
+}
+
+.ShoeCheckout .info {
+  display: flex;
+  padding: 0.5rem;
+}
+.ShoeCheckout .productwrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+@media only screen and (max-width: 1350px) {
+  .ShoeCheckout .productwrapper {
+    display: block;
+  }
+  .ShoeCheckout .img1 {
+    width: 50%;
+    margin: auto;
+    height: auto;
+  }
+  .ShoeCheckout .product-wrapper2 {
+    margin-bottom: 1.2rem;
+  }
+
+  .ShoeCheckout .product-img-container {
+    max-width: none;
+    /* width: 100%; */
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 1111px) {
+  .ShoeCheckout .product-img-container {
+    max-width: 36rem;
+    margin-right: 2rem;
+  }
+  .ShoeCheckout .img1 {
+    width: 65%;
+  }
+  .ShoeCheckout .buyitemcontainer {
+    margin-top: 2rem;
+  }
+  .ShoeCheckout .product-img-container {
+    width: 100%;
+    max-width: none;
+  }
+  .productwrapper {
+    display: block;
+  }
+  .deliverymethod .payment {
+    display: block;
+  }
+  .ShoeCheckout .deliverymethod {
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 716px) {
+  .shoeCheckout .img1,
+  .img2 {
+    display: block;
+    width: 95%;
+    margin: auto;
+    padding-top: 1rem;
+    height: auto;
+  }
+  .shoeCheckout .product-info-heading {
+    background-color: #fff;
+  }
+  .shoeCheckout .product-img-container {
+    background-color: #ffff !important;
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 671px) {
+  .ShoeCheckout .clearance {
+    width: 100%;
+    margin: auto;
+  }
+  .ShoeCheckout .proinfo .product-wrapper {
+    display: block;
+  }
+  .ShoeCheckout .img1,
+  .ShoeCheckout .img2 {
+    display: block;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 1rem;
+    height: auto;
+  }
+}
+@media (max-width: 428px) {
+  .ShoeCheckout .proinfo .productname,
+  .ShoeCheckout .proinfo .productprice {
+    display: block;
+    font-weight: normal;
+  }
+}
+@media (max-width: 384px) {
+  .ShoeCheckout .proinfo .productname,
+  .ShoeCheckout .proinfo .productprice {
+    font-size: 1rem;
+  }
+}
