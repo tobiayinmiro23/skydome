@@ -276,7 +276,7 @@
     margin: 1rem 2%;
   }
   .card-img-container img {
-    height: 8rem;
+    height: 8.3rem;
   }
   .card-info {
     padding: 0.08rem;
@@ -325,7 +325,7 @@
 }
 @media (max-width: 369px) {
   .card-img-container img {
-    height: 8rem;
+    height: 8.3rem;
   }
   .card-info {
     padding: 0.08rem;
