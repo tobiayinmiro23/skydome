@@ -1,0 +1,132 @@
+footer {
+  background: #282828;
+}
+footer .li{
+  padding-top: 0.8rem;
+
+}
+.bottom{
+  margin-top: 30vh;
+}
+.li {
+  margin-top: 2rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.links p {
+  margin: 2rem;
+  color: #d6d3d3;
+  font-family: monospace;
+}
+.tgram {
+  border-radius: 0.2rem;
+  margin: auto;
+}
+.sm-links {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  margin: auto;
+}
+.links p:hover {
+  color: #38ef7d;
+  cursor: pointer;
+}
+.links2 p {
+  /* margin-left: 1rem; */
+  color: white;
+  font-family: monospace;
+}
+.links {
+  margin: 2rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app-container h2,
+.app-container p {
+  color: white;
+}
+.app-container h2 {
+  font-size: 1.3rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.app-container p {
+  font-size: 0.7rem;
+}
+.app1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app-img {
+  margin-left: 0.2rem;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.app1 {
+  cursor: pointer;
+  width: fit-content;
+  border: 1.6px solid white;
+  border-radius: 0.2rem;
+  margin: 0.4rem;
+}
+.app1:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+.app-img-container {
+  display: flex;
+}
+.text-container h2 {
+  font-size: 1rem;
+  text-align: start;
+}
+.text-container {
+  padding: 0.2rem;
+  width: fit-content;
+}
+.text-container p {
+  font-size: 0.7rem;
+  text-align: center;
+}
+.links2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background: rgba(17, 16, 16, 0.8);
+  padding: 0.8rem 0.1rem;
+}
+.app-container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0.6rem;
+  margin: auto;
+  border-radius: 0.4rem;
+  width: fit-content;
+}
+.links2 {
+  flex-wrap: wrap;
+}
+.tgram {
+  padding: 0.4rem;
+  cursor: pointer;
+}
+@media(max-width:848px){
+  .links2,
+  .cpy{
+    display: block;
+    padding: 0.6rem 0rem;
+  }
+  .cpy{
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .app-container{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}

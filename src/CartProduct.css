@@ -1,0 +1,374 @@
+.CartProductContainer{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    padding-top: 5.3rem;
+}
+.emptyCart{
+  text-align: center;
+  margin-top: 4.5rem;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.totalContainer{
+    position: sticky;
+    top: 5rem;
+}
+.CartProduct .image{
+    width: 8rem;
+    height: 6rem;
+}
+.disable{
+  width: 1.75rem;
+  height: 1.9rem;
+  background-color: #38ef7d;
+  box-shadow: 0px 3px 9px rgb(208, 201, 201);
+  cursor: pointer;
+  border-radius: 0.1rem;
+  text-align: center;
+  background-color: #76ae8b9c !important;
+}
+.quantity {
+    font-weight: bolder;
+    margin:0rem 1rem;
+  }
+  .add{
+    width: 1.75rem;
+    height: 1.9rem;
+    background-color: #38ef7d;
+    box-shadow: 0px 3px 9px rgb(208, 201, 201);
+    cursor: pointer;
+    border-radius: 0.1rem;
+    text-align: center;
+  }
+  .add:hover{
+    background: #17cf5e;
+  }
+  .qtyContainer img{
+    width: 0.94rem;
+    height: 0.94rem;
+    margin-top: 0.43rem;
+  }
+  .qtyContainer{
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+  }
+  .shoe .quantity{
+    margin:0rem 0.7rem;
+  }
+.CartProduct .remove > div {
+    width: 1rem;
+}
+.shoe{
+  margin-top: 1rem;
+}
+.productInfo h2{
+    margin-left: 2rem;
+}
+.CartProduct .remove:hover  {
+    box-shadow: 0px 0px 1px 1px black;
+}
+.CartProduct .remove  {
+    display: flex;
+    align-items: flex-end;
+    background-color: red;
+    cursor: pointer;
+    width: min-content;
+    padding:0.3rem 0.6rem;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+}
+.CartProduct .productInfo{
+    display: flex;
+    align-items: flex-start;
+}
+.CartProduct .wrapper{
+    display: flex;
+    align-items: flex-start;
+    margin:0rem 4rem;
+    margin-bottom: 1.3rem;
+    width: 45rem;
+    background-color: rgba(250, 235, 215, 0.532);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.378);
+    padding: 1rem;
+}
+.CartProduct .wrapper .two{
+   margin-left: auto;
+   margin-right: 1rem;
+}
+.totalContainer{
+    width: 16rem;
+    text-align: center;
+    padding: 0.5rem 0rem;
+    background-color: rgba(250, 235, 215, 0.532);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.378);
+}
+.totalContainer h2{
+    border-bottom: 1px solid black;
+    padding-bottom: 0.23rem;
+}   
+.totalContainer button:hover{
+    background: #17cf5e;
+  }
+.totalContainer button{
+    width: 90%;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  font-weight: bolder;
+  background: #38ef7d;
+  box-shadow: 0px 3px 9px rgb(208, 201, 201);
+  border-radius: 0.3rem;
+  margin: 0.5rem 0rem;
+  margin-top: 1.2rem;
+  cursor: pointer;
+}              
+.two span{
+    display: flex;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+.total{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+.total .price{
+    margin-left: 0.5rem;
+}
+@media (max-width:1125px) {
+  .CartProduct .wrapper{
+      width: 38rem;
+  }
+}
+@media (max-width:1033px) {
+  .CartProduct .wrapper{
+      width: 38rem;
+      margin: 2rem;
+  }
+  .totalContainer{
+    position: sticky;
+    top: 7.3rem;
+}
+}
+@media (max-width:1033px) {
+  .CartProduct .wrapper{
+      width: 36rem;
+      margin: 2rem 0rem;
+      margin-right: 1rem;
+      margin-left: 2rem;
+  }
+}
+@media (max-width:898px) {
+  .CartProduct .wrapper{
+      width: 35rem;
+      margin: 1.5rem 1rem;
+  }
+  .totalContainer{
+    position: sticky;
+    top: 6.9rem;
+}
+}
+@media (max-width:855px) {
+  .CartProductContainer{
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+  .CartProduct .wrapper{
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .totalContainer{
+    position:inherit;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+}
+@media (max-width:743px) {
+  .CartProduct .wrapper{
+      width: 90%;
+  }
+}
+@media (max-width:655px) {
+  .productInfo h2{
+    margin-left: 1rem;
+    font-size: 1.2rem;
+  }
+  .CartProduct .image{
+    width: 7rem;
+    height: 5rem;
+  }
+  .CartProduct .wrapper .two{
+    margin-left: auto;
+    margin-right: 0.5rem;
+  }
+  .CartProduct .remove  {
+    padding:0.3rem 0.6rem;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+  }
+  .CartProduct .remove h3{
+    font-size: 1rem;
+  }
+  .wrapper .two h3{
+    font-size: 1.05rem;
+  }
+
+}
+@media (max-width:535px) {
+  .CartProduct .wrapper{
+      width: 95%;
+  }
+  .productInfo h2{
+    margin-left: 0.5rem;
+  }
+}
+@media (max-width:463px) {
+  .CartProduct .wrapper{
+      width: 95%;
+      padding: 1rem;
+  }
+  .productInfo h2{
+    margin-left: 0.5rem;
+    font-size: 1.1rem;
+  }
+  .wrapper .two h3{
+    font-size: 1rem;
+  }
+  .CartProduct .remove  {
+    padding:0.2rem 0.5rem;
+  }
+  .CartProduct .remove img {
+    width: 0.85rem;
+  }
+  .CartProduct .remove h3{
+    font-size: 0.9rem;
+  }
+  .add{
+    width: 1.5rem;
+    height: 1.7rem;
+    border-radius: 0.1rem;
+  }
+  .disable{
+    width: 1.5rem;
+    height: 1.7rem;
+    border-radius: 0.1rem;
+  }
+  .qtyContainer img{
+    width: 0.74rem;
+    height: 0.74rem;
+    margin-top: 0.43rem;
+  }
+  .quantity {
+    margin:0rem 0.6rem;
+  }
+  .shoe .quantity{
+    margin:0rem 0.35rem;
+  }
+}
+/* animation */
+.CartProductWrapper .loader {
+  margin-left: 47%;
+
+}
+.CartProductWrapper .loader > div {
+  margin: 0.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #38ef7d;
+  border-radius: 50%;
+  display: inline-block;
+  animation: Bounce 1.5s infinite both;
+}
+.CartProductWrapper .loading{
+  width: 100%;
+  height: 100vh;
+  padding-top: 16rem;
+}
+.CartProductWrapper .loader .loader1 {
+  animation-delay: -0.3s;
+}
+.CartProductWrapper  .loader .loader2 {
+  animation-delay: -0.15s;
+}
+@keyframes Bounce {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+@media (max-width:571px) {
+  .CartProductWrapper .loader {
+    margin-left: 41%;
+  
+  }
+
+}
+@media (max-width:409px) {
+  .CartProductWrapper .loader {
+    margin-left: 38%;
+  
+  }
+
+}
+@media (max-width:381px) {
+  .productInfo h2{
+    font-size: 1rem;
+  }
+  .wrapper .productInfo .image{
+    width: 6rem;
+    height: 5rem;
+  }
+  .wrapper .two h3{
+    font-size: 0.9rem;
+  }
+}
+@media (max-width:369px) {
+  .CartProduct .wrapper{
+      width: 95%;
+      padding: 0.5rem ;
+      padding-left: 0.65rem;
+      margin: auto;
+      margin-bottom: 1.3rem;
+  }
+  .wrapper .productInfo .image{
+    width: 6rem;
+    height: 5rem;
+  }
+}
+@media (max-width:341px) {
+  .wrapper .productInfo .image{
+    width: 5rem;
+    height: 5rem;
+  }
+}
+@media (max-width:290px) {
+    .shoe .quantity{
+    margin:0rem 0.3rem;
+  }
+}
+@media (max-width:275px) {
+    .quantity{
+    margin:0rem 0.3rem;
+  }
+   .shoe .quantity{
+    margin:0rem 0.1rem;
+  }
+}
+@media (max-width:263px) {
+  .totalContainer{
+    width: 90%;
+  }
+}
