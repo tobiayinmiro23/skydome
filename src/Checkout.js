@@ -86,7 +86,7 @@ function handleEmail(){
                 method:'post',
                 headers:{
                   "Content-Type":"application/json",
-                  "authorization":process.env.AUTHORIZATION_KEY
+                  "AUTHORIZATION":process.env.AUTHORIZATION_KEY
                 },
                 body:JSON.stringify({
                     email
