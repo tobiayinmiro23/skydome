@@ -86,7 +86,7 @@ function handleEmail(){
                 method:'post',
                 headers:{
                   "Content-Type":"application/json",
-                  "authorization":"TOBIS_SECRET_KEY"
+                  "authorization":process.env.AUTHORIZATION_KEY
                 },
                 body:JSON.stringify({
                     email
