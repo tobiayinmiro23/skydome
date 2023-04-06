@@ -1,0 +1,150 @@
+.navigation {
+  width: 100%;
+  max-width: 1800px;
+  display: flex;
+  background: #38ef7d;
+  height: 3.4rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0rem;
+  margin: 0rem !important;
+  z-index: 50;
+  position: fixed;
+}
+.company-name-container {
+  display: flex;
+  align-items: center;
+}
+.company-name h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.9rem;
+}
+.company-logo-container {
+  margin-right:0.035rem ;
+  width: 2.6rem;
+  height: 2.6rem;
+}
+.cart-container {
+  position: relative;
+}
+.cart-img-container img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.cart-count{
+  background: rgb(255, 0, 0);
+  font-size: 13px;
+  font-weight: bolder;
+  width: fit-content;
+  width: 1.2rem;
+  border-radius: 1.8rem;
+  position: absolute;
+  left: 1.2rem;
+  top: -0.3rem;
+  padding-bottom: 0.15rem;
+  text-align: center;
+}
+.menu-container {
+  margin-left: 0.6rem;
+  margin-right: auto;
+  cursor: pointer;
+}
+.menu-container img {
+  border-radius: 0.1rem;
+}
+.cart-container {
+  display: flex;
+  margin-right: 1rem;
+  margin-left: auto;
+  cursor: pointer;
+}
+.shoe-img img{ 
+  height: 1.8rem;
+  width: 1.6rem;
+}
+.shoe-container p{
+  margin-left: 0.3rem;
+
+}
+button {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+.none{
+  display: none;
+}
+/* product category */
+.products-container {
+  width: fit-content;
+  height: fit-content;
+  position: fixed;
+  display: none;
+  top: 3.5rem;
+  margin: 0rem;
+  z-index: 2;
+}
+.block {
+  display: block;
+}
+.container {
+  display: flex;
+  padding: 0.4rem;
+  padding-right: 3rem;
+  cursor: pointer;
+  background-color: khaki;
+}
+
+.container:hover {
+  background: #38ef7d;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container-img {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.sign-up {
+  padding: 0.4rem 2rem;
+  border: 1px solid grey;
+  outline: none;
+  margin-left: 2rem;
+  background: #44bd32;
+  letter-spacing: 0.1rem;
+  border-radius: 0.2rem;
+}
+.sign-up:hover {
+  background: rgba(68, 189, 50, 0.7);
+}
+.sibtn {
+  padding: 0.4rem 2.35rem;
+}
+.sign-up-container,
+.sign-in-container {
+  background: #282828;
+}
+.sign-up-container:hover,
+.sign-in-container:hover {
+  background: #282828;
+}
+
+@media (max-height: 645px) {
+  .products-container {
+    height: 90vh;
+    overflow-y: auto;
+    padding-bottom: 0.9rem;
+  }
+}
+@media (max-width: 379px) {
+  .company-name h1 {
+    font-size: 1.6rem;
+  }
+  .company-logo-container {
+    width: 2.35rem;
+    height: 2.35rem;
+  }
+}
