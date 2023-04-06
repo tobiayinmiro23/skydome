@@ -23,7 +23,7 @@ function Login({user}) {
           const user = userCredential.user;
           setvalid(true)
           setloading(false)
-          window.location='user'
+          window.location='User'
         })
 
         .catch((error) => {
@@ -43,7 +43,7 @@ function Login({user}) {
       e.preventDefault()
         signInWithPopup(auth, provider)
         .then((result) => {
-          window.location='user'
+          window.location='User'
           // This gives you a Google Access Token. You can use it to access the Google API.
           const credential = GoogleAuthProvider.credentialFromResult(result);
           const token = credential.accessToken;
