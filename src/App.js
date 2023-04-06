@@ -56,7 +56,7 @@ function App() {
         <Routes>
             <Route exact path='/' element={<Products id={handleId} handleAdvert={handleAdvert}  advert={advert} />}/>
             <Route path='/cart' element={<CartProduct handletotal={handletotal} />} />
-            <Route path='/User' element={<User user={user}/>} />
+            <Route path='/user' element={<User user={user}/>} />
             <Route path='/checkout'  element={<Checkout total={total} handlePaymentLink={handlePaymentLink}/>} />
             <Route path='/payment'  element={<Payment total={total}  PaymentLink={PaymentLink} />} />
             <Route path='/phone' element={<Phone id={handleId}/>} />
@@ -74,7 +74,6 @@ function App() {
             <Route path='/generalcheckout/:id' element={<ProductCheckout handletotal={handletotal} id={id}/>} />
             <Route path='/unavailable' element={<Unavailable />}  />
             <Route path='/purchased' element={<Purchased />} />
-            {/* <Route path='/checkoutTest' element={<CheckoutTest total={total} handlePaymentLink={handlePaymentLink} />} /> */}
             <Route path='*' element={<Products/>} />
         </Routes>
     </Router>
