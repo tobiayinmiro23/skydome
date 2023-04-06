@@ -99,7 +99,7 @@ function handleEmail(){
                 handlePaymentLink(res?.data?.authorization_url)
               })
               .catch(err=>{
-                // alert(err)
+                alert(err)
               })   
     }else{
       e.preventDefault()
