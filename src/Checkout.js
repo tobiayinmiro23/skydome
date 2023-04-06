@@ -82,7 +82,7 @@ function handleEmail(){
 
   const handleButton=(e)=>{
     if(validName && validAddress && validEmail && validNumber ){
-          fetch('https://skydomee.onrender.com/pay',{
+          fetch(process.env.URL,{
                 method:'post',
                 headers:{
                   "Content-Type":"application/json",
