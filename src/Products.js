@@ -40,8 +40,6 @@ function Products({id,page,handleAdvert,advert}) {
     const handleSearch=()=>{
       if(search !==''){
         handleAdvert(true)
-        const loader=document.querySelectorAll('.loader')[0]
-        loader.classList.add('block')
         const result=laptopProduct.filter(item=>{
           return  item.productname.toLowerCase().includes(search.toLowerCase())
         })
@@ -73,7 +71,6 @@ function Products({id,page,handleAdvert,advert}) {
         setgeneralProduct([])
         setgeneralProduct(a)
         setsearching(false)
-        loader.classList.remove('block')
         if(result.length === 0 && result2.length === 0 && result3.length === 0 && result4.length === 0){
           setinvalidSearch(true)
         }
