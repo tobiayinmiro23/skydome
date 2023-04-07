@@ -10,7 +10,6 @@ function Login({user}) {
   const [loading, setloading] = useState(false)
   const [valid, setvalid] = useState(false)
   const auth = getAuth();
-  const provider= new GoogleAuthProvider()
 
     const SignIn = (e)=>{
       if(valid===false){
