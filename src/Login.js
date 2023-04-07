@@ -1,11 +1,8 @@
 import React,{useState} from 'react'
 import { getAuth, signInWithEmailAndPassword ,sendPasswordResetEmail} from "firebase/auth";
-import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-
 // import {auth} from './firebase'
 import { Link} from 'react-router-dom';
 
-import './Login.css'
 function Login({user}) {
   const[password,setpassword]=useState('')
   const[email,setemail]=useState('')
@@ -39,41 +36,8 @@ function Login({user}) {
            
             
     }
-    const googleSignin=(e)=>{
-      if(valid===false){
-        e.preventDefault()
-      }
-        signInWithPopup(auth, provider)
-        .then((result) => {
-          setvalid(true)
-          // This gives you a Google Access Token. You can use it to access the Google API.
-          const credential = GoogleAuthProvider.credentialFromResult(result);
-          const token = credential.accessToken;
-          // The signed-in user info.
-          const user = result.user;
-        }).catch((error) => {
-          setvalid(false)
-          // Handle Errors here.
-          const errorCode = error.code;
-          const errorMessage = error.message;
-          alert('unable to sign in please try again later')
-          // The email of the user's account used.
-          const email = error.customData.email;
-          // The AuthCredential type that was used.
-          const credential = GoogleAuthProvider.credentialFromError(error);
-        });
-       
-      }
-  return (
+     return (
         <div className="Signup">
-        <div className="googleWrapper">
-        <Link to='/user'>
-            <div className="signInWithGoogle" onClick={(e)=>googleSignin(e)}>
-                <div className="img"><img src="/E-commerce pictures/search.png" alt="google"  /></div>
-                    <h3>Sign in with Google</h3>
-            </div>
-        </Link>
-        </div>
       <main className="signin">
             <h1>sign in</h1>
             <form  action="">
