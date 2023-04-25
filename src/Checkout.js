@@ -57,7 +57,7 @@ const Checkout = ({handlePaymentLink,total}) => {
  const handleNumber=()=>{
  let numberInput=document.querySelectorAll('.Checkout .contact  input')[2]
     const numberPattern=/((^090)([23589]))|((^070)([1-9]))|((^080)([2-9]))|((^081)([0-9]))(\d{7})/
-    if(numberPattern.test(number) === false || number.length !==Number(11)){
+    if(numberPattern.test(number) === false || number.length < Number(10)){
        numberInput.classList.add('inputerror')
        setvalidNumber(false)
     }
@@ -70,7 +70,9 @@ const Checkout = ({handlePaymentLink,total}) => {
 function handleEmail(){
      let emailInput=document.querySelectorAll('.Checkout .contact  input')[1]
     let emailpattern1=/^([\.\_a-zA-Z0-9]+)@([a-zA-Z]+)\.([a-zA-Z]){2,8}$/;
-    if(emailpattern1.test(email)=== false ){
+    let emailpattern2=/^([\.\_a-zA-Z0-9]+)@([a-zA-Z]+)\.([a-zA-Z]){2,3}\.[a-zA-Z]{1,3}$/;
+
+    if(emailpattern1.test(email)=== false  ){
        emailInput.classList.add('inputerror')
        setvalidEmail(false)
     }
@@ -113,10 +115,10 @@ function handleEmail(){
          <section className="contact">
             <form action='' >
                 <div className="error">{errormsg}</div>
-                <input type="text" className='inp'  required placeholder="name" value={name}  onInput={(e)=>setname(e.target.value)} name="" id=""/>
-                <input type="email" required placeholder="email" value={email} onInput={(e)=>setemail(e.target.value)}  name="" id=""/>
-                <input type="number" required placeholder="number" value={number} onInput={(e)=>setnumber(e.target.value)}  name="" id=""/>
-                <textarea required placeholder="address" value={address} onInput={(e)=>setaddress(e.target.value)} ></textarea>
+                <input type="text" className='inp'  required placeholder="name" value={name}  onInput={(e)=>setname(e.target.value)} onChange={()=>handleName()} name="" id=""/>
+                <input type="email" required placeholder="email" value={email} onInput={(e)=>setemail(e.target.value)} onChange={()=>handleEmail()} name="" id=""/>
+                <input type="number" required placeholder="number" value={number} onInput={(e)=>setnumber(e.target.value)} onChange={()=>handleNumber()} name="" id=""/>
+                <textarea required placeholder="address" value={address} onInput={(e)=>setaddress(e.target.value)} onChange={()=>handleAddress()} ></textarea>
                   <div className="btnContainer">
                 <Link to='/payment'>
                     <button onClick={(e)=>handleButton(e)}>
