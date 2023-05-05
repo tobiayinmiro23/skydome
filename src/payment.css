@@ -64,7 +64,7 @@
   border-top:3px solid #76ae8b9c;
   margin: auto;
   border-radius: 50%;
-  animation: round  360ms 143 both;
+  animation: round  360ms 153 both;
   /* animation: round  350ms infinite both; */
 }
 @keyframes round {
