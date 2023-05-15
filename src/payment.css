@@ -14,7 +14,7 @@
 .Payment .loading{
     width: 100%;
     height: 100vh;
-    padding-top: 16rem;
+    padding-top: 25vh;
   }
   .Payment .loader .loader1 {
     animation-delay: -0.3s;
