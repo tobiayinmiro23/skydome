@@ -2,21 +2,25 @@ import React,{useEffect,useState} from 'react'
 import './payment.css'
 const Payment = ({PaymentLink}) => {
   const [valid, setvalid] = useState(false)
-  useEffect(()=>{
-    let wrapper=document.querySelectorAll('.Payment .wrapper')[0]
-    let animation=document.querySelectorAll('.Payment .loading')[0]
-    setTimeout(()=>{
+  const [error, seterror] = useState(false)
+  const handleAnimation=()=>{
+      let wrapper=document.querySelectorAll('.Payment .wrapper')[0]
+      let animation=document.querySelectorAll('.Payment .loading')[0]
       animation.classList.add('none')
       wrapper.classList.remove('none')
-  },3000)
-
+  }
+  useEffect(()=>{
+   setTimeout(()=>{
+    handleAnimation()
+    seterror(true)
+  },240000)
   },[])
-   
- 
    
  useEffect(()=>{
    if(PaymentLink !== '' && PaymentLink !== undefined){
-    setvalid(true)
+          handleAnimation()
+          seterror(false)
+          setvalid(true)
   }
  },[PaymentLink])
   return (
@@ -30,17 +34,14 @@ const Payment = ({PaymentLink}) => {
         </div>
             <div className='wrapper'>
             {
-             valid ?
+             valid === true &&
               <div>
                  <form action={PaymentLink} target='_blank'>
                   <button>Click to pay</button>
               </form>
              </div>
-             :
-             <div className="disabledBtn">
-              <div className="round"></div>
-             </div>
              }
+             {error === true && <h1>Unable to proceed with payment ,please try again later</h1>}
             </div>
     </div>
   )
