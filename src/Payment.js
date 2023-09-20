@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react'
 import './payment.css'
-const Payment = ({PaymentLink}) => {
+const Payment = ({paymentLink}) => {
   const [valid, setvalid] = useState(false)
   const [error, seterror] = useState(false)
   const handleAnimation=()=>{
@@ -17,12 +17,12 @@ const Payment = ({PaymentLink}) => {
   },[])
    
  useEffect(()=>{
-   if(PaymentLink !== '' && PaymentLink !== undefined){
+   if(paymentLink !== '' && paymentLink !== undefined){
           handleAnimation()
           seterror(false)
           setvalid(true)
   }
- },[PaymentLink])
+ },[paymentLink])
   return (
     <div className='Payment'>
         <div  className="loading">
@@ -36,7 +36,7 @@ const Payment = ({PaymentLink}) => {
             {
              valid === true &&
               <div>
-                 <form action={PaymentLink} target='_blank'>
+                 <form action={paymentLink} target='_blank'>
                   <button>Click to pay</button>
               </form>
              </div>
