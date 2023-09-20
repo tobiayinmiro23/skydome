@@ -52,9 +52,11 @@
  .Checkout .contact form .btnContainer button{
      border: none;
      outline: none;
-    padding: 0.4rem 1.2rem;
     border-radius: 0.2rem;
     font-size: 1rem;
+    padding: 0.4rem 1.2rem;
+    width: 13rem;
+    height: 4rem;
     font-weight: bolder;
     background-color: #38ef7d;
     color: white;
@@ -62,7 +64,35 @@
  .Checkout .contact form .btnContainer  button:hover {
     background: #17cf5e;
   }
-
+  .round{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 3px solid   #38ef7d;
+    border-top:3px solid white;
+    margin: auto;
+    border-radius: 50%;
+    animation: round  480ms infinite both;
+  }
+  @keyframes round {
+    0% {
+      transform: rotate(0deg);
+    }
+    20%{
+      transform: rotate(70deg);
+    }
+    40%{
+      transform: rotate(120deg);
+    }
+    60%{
+      transform: rotate(220deg);
+    }
+    80%{
+      transform: rotate(290deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
  
 
  @media only screen and (max-width:666px) {
