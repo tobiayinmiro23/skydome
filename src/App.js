@@ -21,20 +21,11 @@ import Clothes from './Clothes';
 import ClothCheckout from './ClothCheckout';
 import Payment from './Payment'
 import ForgotPassword from './ForgotPassword';
-// import Home from './Home';
 function App() {
-  const [page,setpage]=useState('home')
-  const [user, setuser] = useState('')
   const [advert, setadvert] = useState(false)
   const [total, settotal] = useState(0)
   const [id,setid]=useState(0)
-  const [PaymentLink, setPaymentLink] = useState('')
- 
 
-// for getting the payment link
-  const handlePaymentLink=(param)=>{
-    setPaymentLink(param)
-  }
   // for getting product id
     const handleId=(param)=>{
     setid(param)
@@ -56,9 +47,8 @@ function App() {
         <Routes>
             <Route exact path='/' element={<Products id={handleId} handleAdvert={handleAdvert}  advert={advert} />}/>
             <Route path='/cart' element={<CartProduct handletotal={handletotal} />} />
-            <Route path='/user' element={<User user={user}/>} />
-            <Route path='/checkout'  element={<Checkout total={total} handlePaymentLink={handlePaymentLink}/>} />
-            <Route path='/payment'  element={<Payment total={total}  PaymentLink={PaymentLink} />} />
+            <Route path='/User' element={<User />} />
+            <Route path='/checkout'  element={<Checkout total={total} />} />
             <Route path='/phone' element={<Phone id={handleId}/>} />
             <Route path='/changePassword' element={<ChangePassword />}  />
             <Route path='/laptop' element={<Laptop id={handleId} />} />
@@ -74,6 +64,7 @@ function App() {
             <Route path='/generalcheckout/:id' element={<ProductCheckout handletotal={handletotal} id={id}/>} />
             <Route path='/unavailable' element={<Unavailable />}  />
             <Route path='/purchased' element={<Purchased />} />
+            {/* <Route path='/checkoutTest' element={<CheckoutTest total={total} handlePaymentLink={handlePaymentLink} />} /> */}
             <Route path='*' element={<Products/>} />
         </Routes>
     </Router>
