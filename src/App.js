@@ -6,7 +6,6 @@ import LaptopCheckout from './LaptopCheckout';
 import Phone from './Phone';
 import Products from './Products';
 import Shoe from './Shoe'
-import User from './User';
 import Login from './Login'
 import Signup from './Signup'
 import PhoneCheckout from './PhoneCheckout';
@@ -47,7 +46,6 @@ function App() {
         <Routes>
             <Route exact path='/' element={<Products id={handleId} handleAdvert={handleAdvert}  advert={advert} />}/>
             <Route path='/cart' element={<CartProduct handletotal={handletotal} />} />
-            <Route path='/User' element={<User />} />
             <Route path='/checkout'  element={<Checkout total={total} />} />
             <Route path='/phone' element={<Phone id={handleId}/>} />
             <Route path='/changePassword' element={<ChangePassword />}  />
