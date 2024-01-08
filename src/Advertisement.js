@@ -11,7 +11,7 @@ function Advertisement({handleAdvert}) {
                     <div className="ad-btn">
                       <p className="adtext"> ADS</p>
                     </div>
-                    <div onClick={()=>handleAdvert(true)}} className="cancel-btn">
+                    <div onClick={()=>handleAdvert(true)} className="cancel-btn">
                         <img src="/E-commerce pictures/close (2).png" alt="img" />
                     </div>
                 </div>
