@@ -220,7 +220,7 @@ function Products({id,page,handleAdvert,advert}) {
         }
         </div>
         {/* advertisement */}
-        <Advertisement advert={advert} page={page}/>
+        {!advert && <Advertisement handleAdvert={handleAdvert}/>}
         {/* products after ads */}
         <div className="product">
         {
@@ -282,14 +282,13 @@ function Products({id,page,handleAdvert,advert}) {
         {
             generalProduct.map(item=>{
                 return  <div key={item.id} className="card c1">
-                  <Link to={"/generalcheckout/"+ item.no}>
+               <Link to={ searching ? "/generalcheckout/"+ item.no : "/SearchResultCheckout/"+ item.no  }>
                     <div className="card-img-container"  onClick={()=>id(item.no)}>
                         <img src={item.productimage1} alt="img" />
                     </div>
                   </Link>
                 <div  className="card-info">
-                <Link to={"/generalcheckout/"+ item.no}>
-                  
+               <Link to={ searching ? "/generalcheckout/"+ item.no : "/SearchResultCheckout/"+ item.no  }>
                     <div onClick={()=>id(item.no)}>
                       <h3 className='productname'>{item.productname}</h3>
                         <div className="productPrice">
