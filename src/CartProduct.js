@@ -111,6 +111,13 @@ const decreaseShoeSize=(item)=>{
 }
   return (
    <div className='CartProductWrapper'>
+       <div  className="loading">
+          <div className="loader">
+            <div className="loader1"></div>
+            <div className="loader2"></div>
+            <div className="loader3"></div>
+          </div>
+      </div>
      {/* <div className='Wrapper'> */}
      <div className='Wrapper'>
         {
@@ -181,13 +188,7 @@ const decreaseShoeSize=(item)=>{
         }
     
      </div>
-     <div  className="loading">
-      <div className="loader">
-        <div className="loader1"></div>
-        <div className="loader2"></div>
-        <div className="loader3"></div>
-      </div>
-      </div>
+    
    </div>
   )
 }
