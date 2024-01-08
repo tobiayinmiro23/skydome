@@ -1,14 +1,8 @@
 import React from 'react'
 import './Advertisement.css'
 import {Link} from 'react-router-dom'
-function Advertisement({advert}) {
-  const cancelAds=()=>{
-    const advert=document.querySelectorAll('.advertisement')[0]
-    advert.classList.add('none')
-  }
-  if(advert){
-    cancelAds()
-  }
+function Advertisement({handleAdvert}) {
+
   return (
     <div>
         <div  className="advertisement">
@@ -17,7 +11,7 @@ function Advertisement({advert}) {
                     <div className="ad-btn">
                       <p className="adtext"> ADS</p>
                     </div>
-                    <div onClick={cancelAds} className="cancel-btn">
+                    <div onClick={()=>handleAdvert(true)}} className="cancel-btn">
                         <img src="/E-commerce pictures/close (2).png" alt="img" />
                     </div>
                 </div>
