@@ -20,6 +20,8 @@ import Clothes from './Clothes';
 import ClothCheckout from './ClothCheckout';
 import Payment from './Payment'
 import ForgotPassword from './ForgotPassword';
+import SearchResultCheckout from './SearchResultCheckout';
+
 function App() {
   const [advert, setadvert] = useState(false)
   const [total, settotal] = useState(0)
@@ -55,6 +57,7 @@ function App() {
             <Route path='/signup' element={<Signup />} />
             <Route path='/login'  element={<Login/>}/>
             <Route path='/forgotpassword'  element={<ForgotPassword/>}/>
+            <Route path='/SearchResultCheckout/:id' element={ <SearchResultCheckout  />} />
             <Route path='/laptopcheckout/:id' element={ <LaptopCheckout  handletotal={handletotal}  id={id}/>} />
             <Route path='/shoecheckout/:id'  element={<ShoeCheckout handletotal={handletotal} id={id}/>}/>
             <Route path='/clothcheckout/:id' element={<ClothCheckout handletotal={handletotal} id={id}/>} />
