@@ -12,6 +12,7 @@ function ProductCheckout({id,handletotal}) {
     const productId=Number(useParams().id)
      // for getting a product information
      useEffect(()=>{
+        window.scrollTo(0,0)
         let cartCount=document.querySelectorAll('.cart-count')[0]
         let product=generalProductsForHome.filter(item=>{
             return item.no ===productId
