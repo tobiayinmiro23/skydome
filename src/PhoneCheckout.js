@@ -13,6 +13,7 @@ function PhoneCheckout({id,handletotal}) {
     const [validProduct, setvalidProduct] = useState(true)
     const productId=Number(useParams().id)
     useEffect(()=>{
+        window.scrollTo(0,0)
         let cartCount=document.querySelectorAll('.cart-count')[0]
         let product=phoneProd.filter(item=>{
             return item.no ===productId
