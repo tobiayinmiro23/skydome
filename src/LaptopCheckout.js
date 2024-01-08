@@ -132,7 +132,7 @@ function LaptopCheckout({id,handletotal}) {
     <div className="productwrapper">
         <div className="product-info jk" id='jk'>
             <div className="product-name-container info white">
-                    <h3>product price:</h3>
+                    <h3>product info:</h3>
                     <h3 className="productprice  generalname">{productInformation.productinfo}</h3>
             </div>
             <div className="product-name-container info grey">
