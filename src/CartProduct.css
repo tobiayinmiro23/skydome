@@ -147,26 +147,21 @@ img{
 }
 @media (max-width:1033px) {
   .CartProduct .wrapper{
-      width: 38rem;
-      margin: 2rem;
+      width: 36rem;
+     margin:0rem 0rem 2rem 0rem;
+      margin-right: 1rem;
+      margin-left: 2rem;
   }
-  .totalContainer{
+     .totalContainer{
     position: sticky;
     top: 7.3rem;
 }
 }
-@media (max-width:1033px) {
-  .CartProduct .wrapper{
-      width: 36rem;
-      margin: 2rem 0rem;
-      margin-right: 1rem;
-      margin-left: 2rem;
-  }
-}
 @media (max-width:898px) {
   .CartProduct .wrapper{
       width: 35rem;
-      margin: 1.5rem 1rem;
+     margin: 0rem 1rem 1rem 1rem;
+
   }
   .totalContainer{
     position: sticky;
