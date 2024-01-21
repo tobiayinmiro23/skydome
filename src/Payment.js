@@ -12,7 +12,6 @@ const Payment = ({paymentLink}) => {
   useEffect(()=>{
    setTimeout(()=>{
     handleAnimation()
-    seterror(true)
   },240000)
   },[])
    
@@ -21,6 +20,10 @@ const Payment = ({paymentLink}) => {
           handleAnimation()
           seterror(false)
           setvalid(true)
+  }else{
+    handleAnimation()
+     seterror(true)
+    setvalid(false)
   }
  },[paymentLink])
   return (
