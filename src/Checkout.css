@@ -102,6 +102,11 @@
         padding-top: 5.3rem;
     }
 }
+ @media only screen and (max-height:524px) {
+    .Checkout .contact form{
+        padding-bottom:2.5rem;
+    }
+}
  @media only screen and (max-width:500px) {
     .Checkout .contact form textarea{
         padding:0.5rem;
